@@ -1,0 +1,67 @@
+body{
+    background-image: url(../css/train_yard.png);
+    background-size: cover;
+}
+
+.jumbotron{
+    background-color: #00a1de;
+    border: 5px #c60c30 solid;
+    border-radius: 10px;
+    color: white;
+    margin-top: 15px;
+}
+
+#title{
+    text-align: center;
+    font-weight: bold;
+}
+
+#sub-title{
+    text-align: center;
+    font-weight: bold;
+}
+
+.current{
+    background-color: #00a1de;
+    border-radius: 10px 10px 0 0;
+    color: white;
+    padding: 10px; 
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+table{
+    border-radius: 0 0 10PX 10PX;
+
+}
+
+#trainDiv{
+    border: 2px #00a1de solid;
+    background-color: white;
+}
+
+.add{
+    background-color: #00a1de;
+    border-radius: 10px 10px 0 0;
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 15px;
+    padding: 10px;
+}
+
+#addTrain{
+    background-color: white;
+    border: 2px #00a1de solid;
+    border-radius: 0 0 10px 10px;
+    margin-bottom: 15px;
+    padding: 10px;  
+}
+
+label{
+    font-weight: bold;
+}
+
+button{
+    background-color: #00a1de !important;
+}
