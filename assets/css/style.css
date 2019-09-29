@@ -1,6 +1,6 @@
 body{
-    background-image: url(../css/train_yard.png);
-    background-size: cover;
+    background-image: url(../css/google_maps.png);
+    background-repeat: no-repeat;
 }
 
 .jumbotron{
@@ -12,11 +12,13 @@ body{
 }
 
 #title{
+    color: whitesmoke;
     text-align: center;
-    font-weight: bold;
+    font-family: 'Monoton', cursive;
 }
 
 #sub-title{
+    color: whitesmoke;
     text-align: center;
     font-weight: bold;
 }
