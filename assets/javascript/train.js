@@ -5,12 +5,12 @@ var config = {
     projectId: "trilogy-d5c54",
     storageBucket: "trilogy-d5c54.appspot.com",
     messagingSenderId: "881326920481"
-  };
-  firebase.initializeApp(config);
-  
-  var database = firebase.database();
+};
+firebase.initializeApp(config);
 
-$("#submit").on("click", function(event) {
+var database = firebase.database();
+
+$("#submit").on("click", function (event) {
     console.log("test");
     event.preventDefault();
 
@@ -32,10 +32,13 @@ $("#submit").on("click", function(event) {
     };
     database.ref().push(trainObj);
 
-    
+    $("#inputName").val('');
+    $("#inputDest").val('');
+    $("#inputTime").val('');
+    $("#inputFrequency").val('');
 });
 
-database.ref().on("child_added", function(child){
+database.ref().on("child_added", function (child) {
     console.log(child.val());
     var inputName = child.val().name;
     var inputDest = child.val().destination;
@@ -46,13 +49,13 @@ database.ref().on("child_added", function(child){
     var minAway = inputFrequency - remainder;
     var nextTrain = moment().add(minAway, "minutes");
     nextTrain = moment(nextTrain).format("hh:mm")
-    
+
     var name = $("<td>").text(inputName);
     var destination = $("<td>").text(inputDest);
     var frequency = $("<td>").text(inputFrequency);
     var arrival = $("<td>").text(minAway);
     var train = $("<td>").text(nextTrain);
-    
+
 
     var tRow = $("<tr>");
     tRow.append(name, destination, frequency, train, arrival);

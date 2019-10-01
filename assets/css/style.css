@@ -1,10 +1,20 @@
 body{
-    background-image: url(../css/google_maps.png);
+    background: url("google_maps.png") center center no-repeat;
+    background-size: cover;
     background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    animation: zoom 15s linear infinite;
 }
 
+@keyframes zoom {
+    0%   { background-size: 130% auto; }
+    50% { background-size: 145% auto; }
+    100% { background-size: 130% auto; }
+  }
+
 .jumbotron{
-    background-color: #00a1de;
+    background-color: #EAE0CC;
     border: 5px #c60c30 solid;
     border-radius: 10px;
     color: white;
@@ -24,7 +34,7 @@ body{
 }
 
 .current{
-    background-color: #00a1de;
+    background-color: #4D6A6D;
     border-radius: 10px 10px 0 0;
     color: white;
     padding: 10px; 
@@ -34,16 +44,17 @@ body{
 
 table{
     border-radius: 0 0 10PX 10PX;
-
+    border-collapse: unset;
 }
 
 #trainDiv{
-    border: 2px #00a1de solid;
+    border: 2px #EAE0CC solid;
     background-color: white;
+    border-radius: 0 0 10px 10px;
 }
 
 .add{
-    background-color: #00a1de;
+    background-color: #4D6A6D;
     border-radius: 10px 10px 0 0;
     color: white;
     font-size: 1.5em;
@@ -54,7 +65,7 @@ table{
 
 #addTrain{
     background-color: white;
-    border: 2px #00a1de solid;
+    border: 2px #EAE0CC solid;
     border-radius: 0 0 10px 10px;
     margin-bottom: 15px;
     padding: 10px;  
@@ -65,5 +76,6 @@ label{
 }
 
 button{
-    background-color: #00a1de !important;
+    background-color: #798478  !important;
+    border: #4D6A6D solid 2px !important;
 }
