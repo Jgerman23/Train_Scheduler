@@ -1,24 +1,7 @@
 body{
-    background: url("google_maps.png") center center no-repeat;
+    background: url("google_maps.png");
     background-size: cover;
     background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
-    animation: zoom 15s linear infinite;
-}
-
-@keyframes zoom {
-    0%   { background-size: 130% auto; }
-    50% { background-size: 145% auto; }
-    100% { background-size: 130% auto; }
-  }
-
-.jumbotron{
-    background-color: #EAE0CC;
-    border: 5px #c60c30 solid;
-    border-radius: 10px;
-    color: white;
-    margin-top: 15px;
 }
 
 #title{
@@ -79,3 +62,11 @@ button{
     background-color: #798478  !important;
     border: #4D6A6D solid 2px !important;
 }
+/* 
+@media only screen and (max-width: 450px){
+    body{
+        background-image: url("google_maps.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+} */
