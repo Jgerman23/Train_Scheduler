@@ -1,7 +1,8 @@
 body{
     background: url("google_maps.png");
     background-size: cover;
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
+
 }
 
 #title{
@@ -62,11 +63,15 @@ button{
     background-color: #798478  !important;
     border: #4D6A6D solid 2px !important;
 }
-/* 
+
 @media only screen and (max-width: 450px){
-    body{
-        background-image: url("google_maps.png");
-        background-size: cover;
-        background-repeat: no-repeat;
+    th{
+        font-size: 10px;
+        text-align: center;
     }
-} */
+
+    td{
+        font-size: 8.5px;
+        text-align: center;
+    }
+}
